@@ -21,43 +21,12 @@
       <![endif]-->
     </head>
     <body id="page-top" data-spy="scroll" data-target=".side-menu">
-      <div class="container-fluid">
-        <!-- Start: Header -->
-        <div class="row hero-header" id="home">
-
-          <div class="col-md-7">
-            <img src="img/logo2.png" class="logo">
-            <div id="contador" style="font-size: 30pt; margin-top: -20px;"></div>
-
-          </div>
-        </div>
-        <!-- End: Header -->
-      </div>
       <div class="container">
         <div class="row me-row content-ct align-middle" style="background-color: white;">
-          <h2 class="row-title" style="color: black;" >Apoio</h2>
-          <br>
-            <div class="col-md-3 align-middle"> 
-               <a href="https://www.facebook.com/cassiano22vargas/"><img style="width: 300px; padding: 20px;" src="img/apoiador3.jpeg"></a>
-            </div>
-            <div class="col-md-3 align-middle"> 
-               <a href="https://www.facebook.com/Casa-Das-Cucas-1668432676773367"><img style="width: 300px; padding: 20px;" src="img/apoiador1.jpg"></a>
-            </div>
-            <div class="col-md-3"> 
-               <a href="https://farolti.com.br/site/"><img style="width: 300px; padding: 20px;" src="img/apoiador2.svg"></a>
-            </div>
-        </div>
-        <div class="row me-row content-ct" style="background-color: white;">
-          <h2 class="row-title" style="color: black;" >Realização e organização</h2>
-          <br>
-            <div class="col-md-4 col-sm-3"> </div>
-            <div class="col-md-2 col-sm-3"> 
-               <img style="padding: 20px;" src="img/marca_iff.png">
-            </div>
-            <div class="col-md-2 col-sm-3"> 
-               <img style="padding: 20px;" src="img/nit.png">
-            </div>
-            <div class="col-md-4 col-sm-3"> </div>
+          <div class="col-md-2">
+            <img src="img/composicao.png">
+            <div id="contador" style="font-size: 30pt; padding-left: 650px; margin-top: -600px;"></div>
+          </div>
         </div>
       </div>
       <!-- End: Footer -->
@@ -71,10 +40,13 @@
       <script src="js/jquery.countdown.min.js"></script>
       <script>
       $(document).ready(function() {
-            $('#contador').countdown('2018/09/28 18:00', function(event) {
-                  var $this = $(this).html(event.strftime('<small>Inicia em</small><br> <span class="ti-flag-alt"></span> '
-                         <!--  + '<strong>%d</strong> dias ' -->
-                           + '<strong>%H:%M:%S</strong>'));
+            $('#contador').countdown('2018/09/29 18:00', function(event) { 
+            var tempo = 'Inicia em';
+            if (event.offset.days == 0) {
+                tempo = 'Término: '; 
+            }
+            
+            var $this = $(this).html(event.strftime('<strong>%H:%M:%S</strong>'));
                   });
         });
 
