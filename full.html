@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hackathon Frederico Westphalen | 1ª Edição </title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/themify-icons.css" rel="stylesheet">
+  <link href='css/dosis-font.css' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body id="page-top" data-spy="scroll" data-target=".side-menu">
+      <div class="container-fluid">
+        <!-- Start: Header -->
+        <div class="row hero-header" id="home">
+
+          <div class="col-md-7">
+            <img src="img/logo2.png" class="logo">
+            <div id="contador" style="font-size: 30pt; margin-top: -20px;"></div>
+
+          </div>
+        </div>
+        <!-- End: Header -->
+      </div>
+      <div class="container">
+        <div class="row me-row content-ct align-middle" style="background-color: white;">
+          <h2 class="row-title" style="color: black;" >Apoio</h2>
+          <br>
+            <div class="col-md-3 align-middle"> 
+               <a href="https://www.facebook.com/cassiano22vargas/"><img style="width: 300px; padding: 20px;" src="img/apoiador3.jpeg"></a>
+            </div>
+            <div class="col-md-3 align-middle"> 
+               <a href="https://www.facebook.com/Casa-Das-Cucas-1668432676773367"><img style="width: 300px; padding: 20px;" src="img/apoiador1.jpg"></a>
+            </div>
+            <div class="col-md-3"> 
+               <a href="https://farolti.com.br/site/"><img style="width: 300px; padding: 20px;" src="img/apoiador2.svg"></a>
+            </div>
+        </div>
+        <div class="row me-row content-ct" style="background-color: white;">
+          <h2 class="row-title" style="color: black;" >Realização e organização</h2>
+          <br>
+            <div class="col-md-4 col-sm-3"> </div>
+            <div class="col-md-2 col-sm-3"> 
+               <img style="padding: 20px;" src="img/marca_iff.png">
+            </div>
+            <div class="col-md-2 col-sm-3"> 
+               <img style="padding: 20px;" src="img/nit.png">
+            </div>
+            <div class="col-md-4 col-sm-3"> </div>
+        </div>
+      </div>
+      <!-- End: Footer -->
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.min.js"></script>
+      <script src="js/scrolling-nav.js"></script>
+      <script src="js/validator.js"></script>
+      <script src="js/jquery.countdown.min.js"></script>
+      <script>
+      $(document).ready(function() {
+            $('#contador').countdown('2018/09/28 18:00', function(event) {
+                  var $this = $(this).html(event.strftime('<small>Inicia em</small><br> <span class="ti-flag-alt"></span> '
+                         <!--  + '<strong>%d</strong> dias ' -->
+                           + '<strong>%H:%M:%S</strong>'));
+                  });
+        });
+
+      </script>
+    </body>
+    </html>

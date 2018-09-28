@@ -363,8 +363,13 @@
       <script src="js/jquery.countdown.min.js"></script>
       <script>
       $(document).ready(function() {
-            $('#contador').countdown('2018/09/28 18:00', function(event) {
-                  var $this = $(this).html(event.strftime('<small>Inicia em</small><br> <span class="ti-flag-alt"></span> '
+            $('#contador').countdown('2018/09/29 18:00', function(event) { 
+            var tempo = 'Inicia em';
+            if (event.offset.days == 0) {
+                tempo = 'Término dos projetos em'; 
+            }
+            
+            var $this = $(this).html(event.strftime('<small>' + tempo + '</small><br> <span class="ti-flag-alt"></span> '
                          <!--  + '<strong>%d</strong> dias ' -->
                            + '<strong>%H:%M:%S</strong>'));
                   });
