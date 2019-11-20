@@ -128,7 +128,7 @@ a:hover, a:focus, a:active, a:visited {
 	background: #000000;
 	min-height: 600px;
 	padding: 5em;
-	color: #fff;
+	color: #000;
    background-image: url(../img/silhueta.png);
    background-size: cover;
    background-position: center bottom;
