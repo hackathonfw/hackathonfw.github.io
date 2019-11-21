@@ -373,8 +373,8 @@
       $(document).ready(function() {
             $('#contador').countdown('2019/11/29 18:00', function(event) { 
             var tempo = 'Inicia em';
-            var mascaraDias = '<strong> %D </strong> dias ';
-            if (event.offset.Days == 0) {
+            var mascaraDias = '<strong> %-D </strong> dias ';
+            if (event.offset.totalDays == 0) {
                 tempo = 'Término dos projetos em'; 
                 mascaraDias = '';
             }
